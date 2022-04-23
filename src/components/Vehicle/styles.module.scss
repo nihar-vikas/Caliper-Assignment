@@ -1,0 +1,201 @@
+.vehiclePageMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .vehicleListMain {
+        width: 60%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        @media (max-width: 480px) {
+            width: 100%;
+            margin-top: 0px;
+        }
+    }
+}
+
+.addEditModelCard {
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px;
+    .modleTitle {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 25px;
+        color: #000000;
+        font-family: Poppins;
+    }
+
+    .formInputItems {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px 30px;
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px 10px;
+        }
+    }
+    .helperText {
+        font-size: 12px;
+        color: #C4171C;
+        font-family: Poppins;
+        margin-top: 5px;
+    }
+
+    .inputElement {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .selectInput {
+        width: 100%;
+        color: #000000;
+    }
+    .inputNumber {
+        width: 100%;
+        color: #000000;
+        border-bottom: 0.8px solid gray;
+        padding: 0px;
+        .ant-input-number-input-wrap {
+            .ant-input-number-input {
+                padding: 0px !important;
+            }
+        }
+    }
+
+    .inputLabel {
+        margin: 0px;
+        color: #000000;
+        font-family: Poppins;
+        opacity: 0.5;
+        font-size: 14px;
+    }
+
+    .footerButtons {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 3rem;
+        .footerActionButtons {
+            background-color: #FFFF;
+            border-radius: 50px;
+            margin: 0px 20px;
+            border-color: #10569a;
+            color: #10569a;
+            width: 80px;
+        }
+    }
+}
+
+
+.viewVehiclesListMain {
+    width: 100%;
+    height: 100%;
+
+    .viewVehiclesListHeader {
+        width: 100%;
+        height: 50px;
+        background: #136cdf;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        .viewVehiclesListHeaderLabel {
+            color: #fff;
+            font-size: 18px;
+            font-family: Poppins;
+            margin: 0px;
+        }
+        .viewVehiclesListHeaderIcon {
+            color: #fff;
+            font-size: 25px;
+            font-family: Poppins;
+        }
+    }
+
+    .viewVehiclesListTableDiv {
+        width: 100%;
+        height: 60vh;
+        @media (max-width: 480px) {
+            height: 70vh;
+        }
+        overflow: auto;
+        background-color: #FFFFFF;
+        position: relative;
+        .emptyMessage {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: Poppins;
+            color: #034EA1;
+        }
+        .viewVehiclesListTable {
+            width: 100%;
+            position: relative;
+            .viewVehiclesListTableHeader {
+                padding: 0px 20px;
+                &.fixPosition {
+                    position: sticky;
+                    top: 0px;
+                    background: #fff;
+                    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08);
+                    z-index: 1;
+                }
+                .viewVehiclesListTableHeaderRow {
+                    width: 100%;
+                    height: 50px;
+                    border-bottom: 1px solid #cbc9c9;
+                    &.showHover {
+                        &:hover {
+                            cursor: pointer;
+                            background: #f5f5f5;
+                        }
+                    }
+                    .viewVehiclesListTableHeader {
+                        text-align: left;
+                        font-weight: 500;
+                        font-family: Poppins;
+                        &.fontLight {
+                            font-weight: 400;
+                        }
+                        .actionButtons {
+                            display: flex;
+                            align-items: center;
+                            .editIcon {
+                                color: #2163AE;
+                                font-size: 20px;
+                                margin-right: 10px;
+                                cursor: pointer;
+                            }
+                            .deleteIcon {
+                                color: #C4171C;
+                                margin-left: 10px;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .paginatorContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        .footerAddButton {
+            background-color: #FFFF;
+            border-radius: 50px;
+            margin: 0px 20px;
+            border-color: #10569a;
+            color: #10569a;
+            width: 80px;
+        }
+    }
+}
