@@ -106,6 +106,7 @@ const AddEditVehicleModel = () => {
 
     return (
         <Modal
+            title=""
             closable={false}
             visible={modelStatus}
             footer={null}
