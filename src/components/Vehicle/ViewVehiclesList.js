@@ -17,6 +17,7 @@ const ViewVehiclesList = () => {
         if (vehiclesList?.length === 0 || vehiclesList?.result?.length === 0) {
             dispatch(fetchVehiclesList());
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleDelete = (item) => {
